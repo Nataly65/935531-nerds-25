@@ -148,17 +148,17 @@ body {
 	width: 15px;
 	height: 15px;
 
-	background: transparent url("img/cart.png") no-repeat -1px 0;
+	background: transparent url("../img/cart.png") no-repeat -1px 0;
 	opacity: 0.3;
 }
 .cart:hover::before {
 	opacity: 1;
-	background: transparent url("img/cart.png") no-repeat 0 -46px;
+	background: transparent url("../img/cart.png") no-repeat 0 -46px;
 }
 
 .cart:active::before {
 	opacity: 0.15;
-	background: transparent url("img/active-cart.png") no-repeat;
+	background: transparent url("../img/active-cart.png") no-repeat;
 }
 .visually-hidden{
 position:absolute;	
@@ -722,7 +722,7 @@ vertical-align: top;
     width: 100%;
     min-height: 416px;
     margin: 0 auto;
-    background: #eee no-repeat url("img/map.png") 50% 50%;
+    background: #eee no-repeat url("../img/map.png") 50% 50%;
 }
 
 .map-block {
@@ -827,20 +827,20 @@ vertical-align: top;
 
 .social-btn-vk {
 	background-position:  50% 50%;
-	background-image: url("img/vk-icon.png");
+	background-image: url("../img/vk-icon.png");
 	background-repeat: no-repeat;
 	
 }
 
 .social-btn-fb {	
-	background-image: url("img/fb-icon.png" ) ;
+	background-image: url("../img/fb-icon.png" ) ;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
 .social-btn-insta {
 	background-position:  50% 50%;
-	background-image: url("img/insta-icon.png");
+	background-image: url("../img/insta-icon.png");
 	background-repeat: no-repeat;
 }
 
@@ -1389,32 +1389,32 @@ vertical-align: top;
 }
 
 .item:first-of-type {
-	background: url("img/sedona.jpg") no-repeat;
+	background: url("../img/sedona.jpg") no-repeat;
 	background-size: 260px 536px;
 }
 
 .item:nth-of-type(2) {
-	background: url("img/pink.jpg") no-repeat;
+	background: url("../img/pink.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 
 .item:nth-of-type(3) {
-	background: url("img/barbershop.jpg") no-repeat;
+	background: url("../img/barbershop.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 
 .item:nth-of-type(4) {
-	background: url("img/mishka.jpg") no-repeat;
+	background: url("../img/mishka.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 
 .item:nth-of-type(5) {
-	background: url("img/aplus.jpg") no-repeat;
+	background: url("../img/aplus.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 
 .item:last-of-type {
-	background: url("img/kvast.jpg") no-repeat;
+	background: url("../img/kvast.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 .details {
