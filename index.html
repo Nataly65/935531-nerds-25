@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+	<link rel="stylesheet" href="style.css" type="text/css"/>
   </head>
   <body>
     <header class="main-header">
-      <div class="container ">
+      <div class="container">
             <div class="menu clearfix">
 			 
                 <a class="main-logo">
@@ -35,11 +35,12 @@
 				
                     <a class="cart" href="#">Корзина</a>
                 </div>
-				</div>
-			 <h1 class="visually-hidden">Нёрдс - дизайн-студия из Краснодара</h1>
+			 
+       </div>
+			<h1 class="visually-hidden">Нёрдс - дизайн-студия из Краснодара</h1> 
  <!-- Слайдер -->
             
-            <section class=" slider clearfix">
+            <section class="header-1 slider clearfix">
 			 <h2 class="visually-hidden">Слайды</h2>
                   <input checked id="slide-1" name="toggle" type="radio">
                 <input id="slide-2" name="toggle" type="radio">
@@ -87,9 +88,8 @@
                     <label for="slide-2"></label>
                     <label for="slide-3"></label>
                 </div>
-				
-                   </section>
-		</div>		   
+            </div>
+       </section>
     </header>
 	<!--main  -->
     <main class="container">
@@ -122,7 +122,7 @@
                 и чистоты. Ставим математический расчет выше креатива. Работаем
                 не покладая рук, как роботы.</p>
                 <h3>Выполняем заказы на разработку:</h3>
-                <ul class="content-list">
+                <ul >
                     <li>Веб-сайтов любой сложности</li>						
                     <li>Мобильных приложения для iOS и Android</li>					
                     <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -135,7 +135,7 @@
                 <div class="content-right-list">
                    <div class="info-right-column">
         
-        <h3 class="right-title" >с 2004 года любим точность во всём:</h3>
+        <h3>с 2004 года любим точность во всём:</h3>
         <table class="specifications">
           <tr>
             <th class="percent">146<sup>%</sup></th>
@@ -151,11 +151,14 @@
      </div>  
             </div>
         </div>
-     </div>   
+        
     </main>
-	<div class="sites-partners">		
-            <section class="container ">			
-			 <h2 class="visually-hidden">Партнеры сайта</h2>			 
+	<div class="sites-partners">
+		
+            <section class="container ">
+			
+			 <h2 class="visually-hidden">Партнеры сайта</h2>
+			 
 			 <div class="site">
                 <a class="site-hover" href="#">
                     <img src="img/logo-1.png" alt="HtmlAcademy" height="137" width="198">
@@ -172,9 +175,9 @@
                 </a>
 			 </div>	
             </section>
+          </div>
+		    <div class="map" id="googleMap">
     </div>
-		    <div class="map" id="googleMap"> 
-            </div>
     <footer class="main-footer">
         <div class="container clearfix">
             <section class="contacts">
@@ -188,28 +191,16 @@
             </section>
 			
             <section class="footer-social">
-			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
                 <a class="social-btn social-btn-vk" href="#"></a> 
                 <a class="social-btn social-btn-fb" href="#"></a> 
                 <a class="social-btn social-btn-insta" href="#"></a>
             </section>
             <section class="footer-promo">
-			 <h2 class="visually-hidden">С нами дружить выгодно!</h2>	
                 <b>Давайте дружить, это выгодно!</b>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
         </div>
     </footer>
-     <div class="modal-content">
-			<button class="btn-close" type="button" title="Закрыть">Закрыть</button>
-			<form class="send-email" action="#" method="post">
-				<label class="name">Ваше имя:<br><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-				<label class="email">Ваш e-mail:<br><input type="text" name="email" placeholder="Для отправки ответа"></label>
-				<label class="text-email">Текст письма:<br><textarea name="text-email" placeholder="В свободной форме"></textarea></label>
-				<button class="btn" type="submit" name="send">Отправить</button>
-			</form>
-		</div>   
-    <script src="js/popup.js"></script>
-   
+    
 </body>
 </html>
