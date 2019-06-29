@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
   </head>
-  <body>
+   <body>
     <header class="main-header">
-      <div class="container">
-            <div class="menu clearfix">
+      <div class="container ">
+            <div class="menu ">
 			 
                 <a class="main-logo">
                     <img src="img/logo.png" alt="Веб-студия Nёrds" height="56" width="140">
                 </a>
 				
-                <nav class="main-navigation">
+                 <nav class="main-navigation">
                     <ul>
                         <li>
                         <a class="active" href="index.html">Студия</a>
@@ -35,8 +37,7 @@
 				
                     <a class="cart" href="#">Корзина</a>
                 </div>
-			 
-       </div>
+				</div>
 	  <!-- каталог-->
 				<div class="header-2">
 					<h1 class="header-title">Добро пожаловать в магазин<br> 
@@ -44,8 +45,9 @@
 				</div>
 			</div>
 		</header>
-		<main class="container clearfix">
-				<form class="filters" action="#" method="get">
+		<main 
+		<div class="catalog-columns">
+				<form class="left-column filters" action="#" method="get">
 					<fieldset class="cost">
 						<legend class="filters-title">Стоимость:</legend>
 						<div class="cost-range">
@@ -100,7 +102,7 @@
 					</fieldset>
 						<button type="submit" name="show-filters" title="Показать">Показать</button>
 				</form>
-				<div class="items">
+				<div class="items right-column">
 					<div class="sort">
 						<h2 class="sort-title">Сортировать:</h2>
 						<ul class="sort-list">
@@ -168,6 +170,7 @@
 							</div>
 						</section>
 					</div>
+					
 					<div class="paginator">
 						<a class="current" href="#">1</a>
 						<a href="#">2</a>
@@ -175,31 +178,36 @@
 						<a class="next" href="#">Следующая</a>
 					</div>
 				</div>
+				
 		</main>	
-		<div class="map" id="googleMap"></div>
-		<footer class="main-footer">
-			<div class="container clearfix">
-				<section class="contacts">
-						<h3 class="contacts-title">NЁRDS DESIGN STUDIO</h3>
-						<p class="contacts-address">191186, Санкт-Петербург,
-						ул. Б. Конюшенная,д. 19/8</p>
-						<p class="contacts-tel">тел. +7 (812) 275-75-75S</p>
-						<a class="btn" href="#" >Напишите нам</a>
-				</section>	
-				<section class="footer-social">
-				<h2 class="visually-hidden">Ссылки на социальные сети</h2>
-					<a class="social-btn social-btn-vk" href="#"></a>
-					<a class="social-btn social-btn-fb" href="#"></a>
-					<a class="social-btn social-btn-insta" href="#"></a>
-				</section>
-				<section class="footer-promo">
-				<h2 class="visually-hidden">С нами дружить выгодно!</h2>
-					<b>Давайте дружить, это выгодно!</b>
-					<p>Скидка 10% для друзей из социальных сетей</p>
-				</section>
-			</div>
-		</footer>
-		<div class="modal-content">
+		   <div class="map" id="googleMap"> 
+            </div>
+    <footer class="main-footer">
+        <div class="adress ">
+            <section class="contacts">
+                <h3 class="contacts-title">Nёrds design studio</h3>
+				
+                <p class="contacts-address">191186, Санкт-Петербург, ул. Б.
+                Конюшенная,д. 19/8</p>
+				
+                <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
+                <a class="btn" href="#">Напишите нам</a>
+            </section>
+			
+            <section class="footer-social">
+			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
+                <a class="social-btn social-btn-vk" href="#"></a> 
+                <a class="social-btn social-btn-fb" href="#"></a> 
+                <a class="social-btn social-btn-insta" href="#"></a>
+            </section>
+            <section class="footer-promo">
+			 <h2 class="visually-hidden">С нами дружить выгодно!</h2>	
+                <b>Давайте дружить, это выгодно!</b>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+        </div>
+    </footer>
+     <div class="modal-content">
 			<button class="btn-close" type="button" title="Закрыть">Закрыть</button>
 			<form class="send-email" action="#" method="post">
 				<label class="name">Ваше имя:<br><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
@@ -207,9 +215,8 @@
 				<label class="text-email">Текст письма:<br><textarea name="text-email" placeholder="В свободной форме"></textarea></label>
 				<button class="btn" type="submit" name="send">Отправить</button>
 			</form>
-		</div>
-		
-		<script src="js/popup.js"></script>
-		 
-	</body>
+		</div>   
+    <script src="js/popup.js"></script>
+   
+</body>
 </html>
