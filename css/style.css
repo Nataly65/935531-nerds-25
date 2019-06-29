@@ -25,19 +25,14 @@ body {
 	margin-bottom: 75px;
 }
 
-.clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.container {
+.container {display:flex;
+ flex-direction:column;
 	width: 880px;
 	padding: 0 10px;
 	margin: 0 auto;
 }
 /* меню */
-.menu {
+.menu {display:flex;
 	margin-bottom: 35px;
 }
 
@@ -46,8 +41,8 @@ body {
 }
 
 .main-logo {
-	float: left;
-	width: 140px;
+	
+	width: 140px;l
 	height: 56px;
 	margin: 0;
 	padding: 0;
@@ -62,7 +57,8 @@ body {
 }
 
 .main-navigation {
-	float: left;
+	display:flex;
+	flex-direction:column;
 	width: 460px;
 }
 
@@ -112,7 +108,7 @@ body {
 }
 /* корзина */
 .user-block {
-	float: right;
+	
 	max-width: 100px;
 }
 
@@ -186,12 +182,13 @@ margin: -1px;
 
 .slider-slides {
 	width: 300%;
-
+display:  flex;
 	transition: transform 0.8s ease;
 }
 
 .slider-slides .slide {
-	float: left;
+	display:  flex;
+
 	width: 880px;
 }
 
@@ -263,7 +260,6 @@ margin-left	: 400px;
 }
 
 .slide-title {
-	float: left;
 	width: 480px;
 	margin-right: 60px;
 }
@@ -302,8 +298,7 @@ margin-left	: 400px;
 }
 
 .slide-1 .slide-image {
-	float: right;
-	width: 340px;
+	
 	margin-bottom: 70px;
 }
 
@@ -317,13 +312,13 @@ margin-left	: 400px;
 }
 
 .slide-2 .slide-image {
-	float: right;
+	
 	width: 340px;
 	margin-bottom: 45px;
 }
 
 .slide-2 .slide-image img {
-	float: right;
+	
 	width: 230px;
 	height: 249px;
 }
@@ -333,7 +328,7 @@ margin-left	: 400px;
 }
 
 .slide-3 .slide-image {
-	float: right;
+	
 	width: 340px;
 }
 
@@ -354,7 +349,7 @@ margin-left	: 400px;
 	color: #000000;
 }
 /* сервис */
-.services {
+.services {display:flex;
 	margin-bottom: 60px;
 	padding-bottom: 80px;
 
@@ -362,7 +357,7 @@ margin-left	: 400px;
 }
 
 .services-item {
-	float: left;
+	
 	width: 240px;
 	margin-right: 80px;
 }
@@ -446,14 +441,14 @@ margin-left	: 400px;
 	background-color: #c09b24;
 }
 /* Что студия делает */
-.index-content {
+.index-content {display:flex;
 	padding-bottom: 70px;
 
 	border-bottom: 2px solid #eeeeee;
 }
 
 .index-content-left {
-	float: left;
+	
 	width: 580px;
 	margin-right: 20px;
 	
@@ -462,7 +457,7 @@ margin-left	: 400px;
 .tagline {
 	margin: 0;
 	margin-bottom: 25px;
-padding-top: 40px;
+    padding-top: 40px;
 	font-weight: 500;
 	font-size: 36px;
 	line-height: 46px;
@@ -538,9 +533,8 @@ padding-top: 40px;
 }
 
 .index-content-right {
-	float: right;
 	width: 260px;
-		}
+}
 
 .index-content-logo {
 	margin-bottom: 70px;
@@ -626,6 +620,7 @@ vertical-align: top;
 
 /* сайты-партнеры */
 .sites-portfolio {
+
 	width: 880px;
 	padding-left: 12px;
 	padding-right: 20px;
@@ -633,14 +628,25 @@ vertical-align: top;
 
 	border-bottom: 2px solid #eeeeee;
 }
-
-.site { 
-    margin-right: 5px; 
-    display: inline-block;
+.partners{
+display: flex;
+  flex-wrap: wrap;
+  justify-content:flex-start ;
+  align-items: center;
+  margin-right: 80px;
+  margin-left: 150px; 
+  .site:nth-of-type(2) {
+	padding-top: 55px;
+	padding-left: 10px;
+}
+}  
+.site {
+ 
+    padding-left: 10px;
     padding: 3px;
 	
 	width: 240px;
-	margin-right: 60px;
+	
 }
 .site-hover a
 .site:first-child {
@@ -651,8 +657,12 @@ vertical-align: top;
 .site:nth-of-type(2) {
 	padding-top: 55px;
 	padding-bottom: 42px;
+	
 }
-
+.site:nth-of-type(3) {
+	padding-top: 55px;
+	padding-bottom: 42px;
+}
 .site:last-child {
 	padding-top: 45px;
 	padding-bottom: 35px;
@@ -660,12 +670,15 @@ vertical-align: top;
 }
 
 /* адрес студии */
+.adress {margin-right: 80px;
+  margin-left: 150px; 
+}  
 .contacts {
 	position: absolute;
 	top: -400px;
 	left: 160px;
 
-	float: left;
+	
 	width: 210px;
 	padding: 24px 20px 30px 20px;
 
@@ -881,7 +894,24 @@ vertical-align: top;
 	box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
 }
 
+
+
 /*Страница магазин  */
+
+.catalog-columns {
+  
+  display: flex;
+  justify-content: space-between;
+margin-left: 100px;
+  margin-top: 58px;
+  margin-right: 120px;
+}	
+.left-column{
+	display: flex;
+	flex-direction:column;
+	
+}
+
 .filters .features {
 	margin-bottom: 55px;
 }
@@ -928,7 +958,7 @@ vertical-align: top;
 
 
 .filters {
-	float: left;
+	
 	width: 240px;
 	margin: 0;
 	margin-right: 60px;
@@ -1025,7 +1055,7 @@ vertical-align: top;
 
 .cost output {
 	padding: 10px 36px 10px 36px;
-
+    
 	background: #f1f1f1;
 	border-radius: 5px;
 }
@@ -1041,6 +1071,7 @@ vertical-align: top;
 	margin-left: 10px;
 }
 /* сетка */
+
 .filters .net {
 	margin-bottom: 45px;
 }
@@ -1233,14 +1264,25 @@ vertical-align: top;
 	box-shadow: inset 0 3px rgba(0, 0, 0, 0.15);
 }
 
-.items {
-	float: right;
+.items {display: flex;
+	
+  
+  flex-wrap: wrap;
+  
+  justify-content: space-between;
+  flex-align: baseline;
+  align-items: baseline;
 	width: 561px;
 	padding-left: 19px;	
 }
 
+/* Сортировка */
+.sort {display: inline-block;
+  
+  
+   
 
-.sort {
+
 	margin-bottom: 21px;
 }
 
@@ -1358,18 +1400,15 @@ vertical-align: top;
 
 
 .items {
-	float: right;
+	
 	width: 561px;
 	padding-left: 19px;
 	
 }
 
-
-
-
 .item {
 	position: relative;
-	float: left;
+	
 	width: 200px;
 	height: 340px;
 	padding: 20px;
@@ -1378,6 +1417,14 @@ vertical-align: top;
 
 	border-top: 30px solid #f1f1f1;
 	border-radius: 5px;	
+}
+
+.items-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .item:nth-of-type(2n) {
@@ -1409,7 +1456,7 @@ vertical-align: top;
 }
 
 .item:nth-of-type(5) {
-	background: url("../img/aplus.jpg") no-repeat;
+	background: url("img/aplus.jpg") no-repeat;
 	background-size: 260px 360px;
 }
 
