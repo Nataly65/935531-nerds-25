@@ -139,17 +139,17 @@ body {
 	width: 15px;
 	height: 15px;
 
-	background: transparent url("img/cart.png") no-repeat -1px 0;
+	background: transparent url("../img/cart.png") no-repeat -1px 0;
 	opacity: 0.3;
 }
 .cart:hover::before {
 	opacity: 1;
-	background: transparent url("img/cart.png") no-repeat 0 -46px;
+	background: transparent url("../img/cart.png") no-repeat 0 -46px;
 }
 
 .cart:active::before {
 	opacity: 0.15;
-	background: transparent url("img/cart-icon.svg") no-repeat;
+	background: transparent url("../img/cart-icon.svg") no-repeat;
 }
 .visually-hidden{
 position:absolute;	
@@ -768,7 +768,7 @@ vertical-align: middle;
     width: 100%;
     min-height: 416px;
     margin: 0 auto;
-    background: #eee no-repeat url("img/map.png") 50% 50%;
+    background: #eee no-repeat url("../img/map.png") 50% 50%;
 	background-size: 1200px 420px;
 }
 
@@ -873,25 +873,25 @@ vertical-align: middle;
 	background-color: #d6494d;
 }
 
-.social-btn	{background: url('img/sprites.png') no-repeat;
+.social-btn	{background: url('../img/sprites.png') no-repeat;
 }
 
 .social-btn-vk {
 	background-position:  50% 50%;
-	background-image: url("img/vk-icon.png");
+	background-image: url("../img/vk-icon.png");
 	background-repeat: no-repeat;
 	
 }
 
 .social-btn-fb {	
-	background-image: url("img/fb-icon.png" ) ;
+	background-image: url("../img/fb-icon.png" ) ;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 }
 
 .social-btn-insta {
 	background-position:  50% 50%;
-	background-image: url("img/insta-icon.png");
+	background-image: url("../img/insta-icon.png");
 	background-repeat: no-repeat;
 }
 
