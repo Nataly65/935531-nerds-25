@@ -1,31 +1,30 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="style1.css" type="text/css"/>
+
   </head>
-   <body>
+  <body>
     <header class="main-header">
       <div class="container ">
             <div class="menu ">
 			 
-                <a class="main-logo">
+                 <a class="main-logo" href="index.html">
                     <img src="img/logo.png" alt="Веб-студия Nёrds" height="56" width="140">
                 </a>
 				
-                 <nav class="main-navigation">
+                <nav class="main-navigation">
                     <ul>
                         <li>
-                        <a class="active" href="index.html">Студия</a>
+                        <a class="active" href="catalog.html">Студия</a>
                         </li>
                         <li>
                         <a href="#">Клиенты</a>
                         </li>
                         <li>
-						<a href="catalog.html">Магазин</a>
+						<a href="index1.html">Магазин</a>
                         </li>
                         <li>
                         <a href="#">Контакты</a>
@@ -40,12 +39,11 @@
 				</div>
 	  <!-- каталог-->
 				<div class="header-2">
-					<h1 class="header-title">Добро пожаловать в магазин<br> 
-											 готовых шаблонов</h1>
+					<h1 class="header-title">Магазин готовых шаблонов</h1>
 				</div>
 			</div>
 		</header>
-		<main 
+		<main> 
 		<div class="catalog-columns">
 				<form class="left-column filters" action="#" method="get">
 					<fieldset class="cost">
@@ -78,25 +76,25 @@
 					<fieldset class="features">
 						<legend class="filters-title">Особенности:</legend>
 						<ul class="features-list">
-							<li>
-								<input name="features" type="checkbox" value="slider" id="slider">
-								<label for="slider">Слайдер</label>
+							<li class="filter-option">
+							 <input name="features" type="checkbox" value="slider" id="slider">
+								<label for="slider" tabindex="0">Слайдер</label>
 							</li>
-							<li>
+							<li class="filter-option">
 								<input name="features" type="checkbox" value="features-block" id="features-block">
-								<label for="features-block">Блок преимуществ</label>
+								<label for="features-block" tabindex="0">Блок преимуществ</label>
 							</li>
-							<li>
+							<li class="filter-option">
 								<input name="features" type="checkbox" value="news" id="news">
-								<label for="news">Новости</label>
+								<label for="news" tabindex="0">Новости</label>
 							</li>
-							<li>
+							<li class="filter-option">
 								<input name="features" type="checkbox" value="gallery" id="gallery">
-								<label for="gallery">Галерея</label>
+								<label for="gallery" tabindex="0">Галерея</label>
 							</li>
-							<li>
+							<li class="filter-option">
 								<input name="features" type="checkbox" value="cart" id="cart">
-								<label for="cart">Корзина</label>
+								<label for="cart" tabindex="0">Корзина</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -113,64 +111,98 @@
 								<a class="sort-type" href="#">По типу</a>
 							</li>
 							<li>
-								<a class="sort-type" href="#">По функционалу</a>
+								<a class="sort-type" href="#">По названию</a>
 							</li>
 						</ul>
 						<span class="arrow arrow-up"></span>
 						<span class="arrow arrow-down"></span>
 					</div>
-					<div class="items-list clearfix">
-					<h2 class="visually-hidden">Сайты</h2> 
-						<section class="item">
-						<h3 class="visually-hidden">Sedona</h3> 
-							<div class="details">
-								<header>Sedona</header>
-								<p>Информационный сайт<br> для туристов</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-						<section class="item">
-						<h3 class="visually-hidden">Pink App</h3> 
-							<div class="details">
-								<header>Pink App</header>
-								<p>Продуктовый лендинг приложения для iOS и Android</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-						<section class="item">
-						<h3 class="visually-hidden">Barbershop</h3> 
-							<div class="details">
-								<header>Barbershop</header>
-								<p>Сайт салона красоты.<br> Для мужчин, да.</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-						<section class="item">
-						<h3 class="visually-hidden">Mishka</h3> 
-							<div class="details">
-								<header>Mishka</header>
-								<p>Интернет-магазин<br> вязаных игрушек</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-						<section class="item">
-						<h3 class="visually-hidden">A Plus</h3> 
-							<div class="details">
-								<header>A Plus</header>
-								<p>Лендинг курсов повышения квалификации</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-						<section class="item">
-						<h3 class="visually-hidden">Кваст</h3> 
-							<div class="details">
-								<header>Кваст</header>
-								<p>Промо-сайт производителя крафтового кваса</p>
-								<a class="btn" href="#">9900 р.</a>
-							</div>
-						</section>
-					</div>
-					
+					<ul class="catalog-list">
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+              <div class="description">
+                <h3><a class="item-link" href="sedona.html">Sedona</a></h3>
+                <p class="item-details">Информационный сайт для туристов</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/pink.jpg" width="360" height="576" alt="Pink App">
+              <div class="description">
+                <h3><a class="item-link" href="pink.html">Pink App</a></h3>
+                <p class="item-details">Продуктовый лендинг приложения для iOS и Android</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
+              <div class="description">
+                <h3><a class="item-link" href="barbershop.html">Barbershop</a></h3>
+                <p class="item-details">Сайт салона красоты. Для мужчин, да.</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+              <div class="description">
+                <h3><a class="item-link" href="mishka.html">Mishka</a></h3>
+                <p class="item-details">Интернет-магазин вязаных игрушек</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/aplus.jpg" alt="A Plus">
+              <div class="description">
+                <h3><a class="item-link" href="aplus.html">A Plus</a></h3>
+                <p class="item-details">Лендинг курсов повышения квалификации</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+          <li class="catalog-item">
+            <article class="item-folder">
+              <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
+                <path fill="#4D4D4D"
+                  d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
+              </svg>
+              <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+              <div class="description">
+                <h3><a class="item-link" href="kvast.html">Кваст</a></h3>
+                <p class="item-details">Промо-сайт производителя крафтового кваса</p>
+                <a class="item-price" href="#">9 900 руб.</a>
+              </div>
+            </article>
+          </li>
+        </ul>
 					<div class="paginator">
 						<a class="current" href="#">1</a>
 						<a href="#">2</a>
@@ -178,7 +210,7 @@
 						<a class="next" href="#">Следующая</a>
 					</div>
 				</div>
-				
+		</div>	
 		</main>	
 		   <div class="map" id="googleMap"> 
             </div>
@@ -189,16 +221,16 @@
 				
                 <p class="contacts-address">191186, Санкт-Петербург, ул. Б.
                 Конюшенная,д. 19/8</p>
-				
+				 
                 <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-                <a class="btn" href="#">Напишите нам</a>
-            </section>
+				<a class="btn-connection" href="https://echo.htmlacademy.ru">Напишите нам</a>
+                           </section>
 			
             <section class="footer-social">
 			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
-                <a class="social-btn social-btn-vk" href="#"></a> 
-                <a class="social-btn social-btn-fb" href="#"></a> 
-                <a class="social-btn social-btn-insta" href="#"></a>
+                <a class="social-btn social-btn-vk" href="#" alt="Логотип vkontakte"></a> 
+                <a class="social-btn social-btn-fb" href="#" alt="Логотип facebook"></a> 
+                <a class="social-btn social-btn-insta" href="#""Логотип instagram"></a>
             </section>
             <section class="footer-promo">
 			 <h2 class="visually-hidden">С нами дружить выгодно!</h2>	
