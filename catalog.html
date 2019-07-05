@@ -1,30 +1,33 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="normalize.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css" type="text/css"/>
+
   </head>
   <body>
     <header class="main-header">
       <div class="container ">
-            <div class="menu ">			 
+            <div class="menu ">
+			 
                  <a class="main-logo" href="index.html">
-                    <img src="img/logo.png" alt="Веб-студия Nёrds" height="56" width="140">
+                    <img src="../img/logo.png" alt="Веб-студия Nёrds" height="56" width="140">
                 </a>
 				
                 <nav class="main-navigation">
                     <ul>
                         <li>
-                        <a class="active" href="catalog.html">Студия</a>
+                        <a  href="index.html">Студия</a>
                         </li>
                         <li>
                         <a href="#">Клиенты</a>
                         </li>
                         <li>
-						<a href="index1.html">Магазин</a>
+						<a class="active" href="catalog.html">Магазин</a>
                         </li>
                         <li>
                         <a href="#">Контакты</a>
@@ -45,30 +48,34 @@
 		</header>
 		<main> 
 		<div class="catalog-columns">
-				<form class="left-column filters" action="#" method="get">
-					<fieldset class="cost">
+				<form class="left-column filters" action="https://echo.htmlacademy.ru" method="get">
+				
+				<fieldset class="cost">
 						<legend class="filters-title">Стоимость:</legend>
 						<div class="cost-range">
 							<div class="min-range"></div>
 							<input type="range" name="cost-range" min="0" max="15000" step="100">
 							<div class="input-range"></div>
+							
 							<div class="max-range"></div>
+							<input type="range" name="cost-range" min="0" max="15000" step="100">
 						</div>
 						<p>ОТ<output name="cost-from">0</output>ДО<output name="cost-to">15000</output></p>
 					</fieldset>
+					
 					<fieldset class="net">
 						<legend class="filters-title">Сетка:</legend>
 						<ul class="radio-list">
 							<li>
-								<input name="net" type="radio" value="adaptive" id="net-1">
+								<input  class="radio" name="net" type="radio" value="adaptive" id="net-1">
 								<label for="net-1">Адаптивная</label>
 							</li>
 							<li>
-								<input name="net" type="radio" value="fixed" id="net-2">
+								<input class="radio" name="net" type="radio" value="fixed" id="net-2">
 								<label for="net-2">Фиксированная</label>
 							</li>
 							<li>
-								<input name="net" type="radio" value="rubber" id="net-3">
+								<input class="radio" name="net" type="radio" value="rubber" id="net-3">
 								<label for="net-3">Резиновая</label>
 							</li>
 						</ul>
@@ -117,90 +124,93 @@
 						<span class="arrow arrow-up"></span>
 						<span class="arrow arrow-down"></span>
 					</div>
-					<ul class="catalog-list">
+					<section class="catalog">
+        <h2 class="visually-hidden">Список готовых шаблонов</h2>
+        <div
+        <ul class="catalog-list">
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/sedona.jpg" width="360" height="576" alt="Sedona">
+              <img src="../img/sedona.jpg" width="360" height="576" alt="Sedona">
               <div class="description">
                 <h3><a class="item-link" href="sedona.html">Sedona</a></h3>
                 <p class="item-details">Информационный сайт для туристов</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/pink.jpg" width="360" height="576" alt="Pink App">
+              <img src="../img/pink.jpg" width="360" height="576" alt="Pink App">
               <div class="description">
                 <h3><a class="item-link" href="pink.html">Pink App</a></h3>
                 <p class="item-details">Продуктовый лендинг приложения для iOS и Android</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/barbershop.jpg" width="360" height="576" alt="Barbershop">
+              <img src="../img/barbershop.jpg" width="360" height="576" alt="Barbershop">
               <div class="description">
                 <h3><a class="item-link" href="barbershop.html">Barbershop</a></h3>
                 <p class="item-details">Сайт салона красоты. Для мужчин, да.</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/mishka.jpg" width="360" height="576" alt="Mishka">
+              <img src="../img/mishka.jpg" width="360" height="576" alt="Mishka">
               <div class="description">
                 <h3><a class="item-link" href="mishka.html">Mishka</a></h3>
                 <p class="item-details">Интернет-магазин вязаных игрушек</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/aplus.jpg" alt="A Plus">
+              <img src="../img/aplus.jpg" alt="A Plus">
               <div class="description">
                 <h3><a class="item-link" href="aplus.html">A Plus</a></h3>
                 <p class="item-details">Лендинг курсов повышения квалификации</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
           <li class="catalog-item">
-            <article class="item-folder">
+            <section class="item-folder">
               <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
                 <path fill="#4D4D4D"
                   d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z" />
               </svg>
-              <img src="img/kvast.jpg" width="360" height="576" alt="Кваст">
+              <img src="../img/kvast.jpg" width="360" height="576" alt="Кваст">
               <div class="description">
                 <h3><a class="item-link" href="kvast.html">Кваст</a></h3>
                 <p class="item-details">Промо-сайт производителя крафтового кваса</p>
                 <a class="item-price" href="#">9 900 руб.</a>
               </div>
-            </article>
+            </section>
           </li>
         </ul>
 					<div class="paginator">
@@ -210,6 +220,7 @@
 						<a class="next" href="#">Следующая</a>
 					</div>
 				</div>
+				</section>
 		</div>	
 		</main>	
 		   <div class="map" id="googleMap"> 
@@ -223,14 +234,21 @@
                 Конюшенная,д. 19/8</p>
 				 
                 <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-				<a class="btn-connection" href="https://echo.htmlacademy.ru">Напишите нам</a>
+				<a class="btn" href="https://echo.htmlacademy.ru">Напишите нам</a>
                            </section>
 			
             <section class="footer-social">
 			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
-                <a class="social-btn social-btn-vk" href="#" alt="Логотип vkontakte"></a> 
-                <a class="social-btn social-btn-fb" href="#" alt="Логотип facebook"></a> 
-                <a class="social-btn social-btn-insta" href="#""Логотип instagram"></a>
+                <a class="social-btn social-btn-vk" href="#" >
+				 <span class="visually-hidden">ВКонтакте</span>
+				</a> 
+                <a class="social-btn social-btn-fb" href="#" >
+				<span class="visually-hidden">Фейсбук</span>
+				</a> 
+				 
+                <a class="social-btn social-btn-insta" href="#">
+				<span class="visually-hidden">Инстаграм</span>
+				</a>
             </section>
             <section class="footer-promo">
 			 <h2 class="visually-hidden">С нами дружить выгодно!</h2>	
@@ -239,12 +257,12 @@
             </section>
         </div>
     </footer>
-     <div class="modal-content">
+       <div class="modal-content">
 			<button class="btn-close" type="button" title="Закрыть">Закрыть</button>
-			<form class="send-email" action="#" method="post">
-				<label class="name">Ваше имя:<br><input type="text" name="name" placeholder="Представьтесь, пожалуйста"></label>
-				<label class="email">Ваш e-mail:<br><input type="text" name="email" placeholder="Для отправки ответа"></label>
-				<label class="text-email">Текст письма:<br><textarea name="text-email" placeholder="В свободной форме"></textarea></label>
+			<form class="send-email" action="https://echo.htmlacademy.ru" method="post">
+				<label class="name">Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
+				<label class="email">Ваш e-mail:<input type="text" name="email" placeholder="Для отправки ответа"></label>
+				<label class="text-email">Текст письма:<textarea name="text-email" placeholder="В свободной форме"></textarea></label>
 				<button class="btn" type="submit" name="send">Отправить</button>
 			</form>
 		</div>   
