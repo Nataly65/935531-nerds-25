@@ -693,7 +693,7 @@ margin-left	: 400px;
     width: 100%;
     min-height: 416px;
     margin: 0 auto;
-    background: #eee no-repeat url("img/map.png") 50% 50%;
+    background: #eee no-repeat url("../img/map.png") 50% 50%;
 	background-size: 1200px 420px;
 }
 .map-block-title {
