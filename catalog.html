@@ -1,33 +1,31 @@
- <!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic"
-    rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+ <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container ">
             <div class="menu ">
-			 
-                 <a class="main-logo" href="index.html">
+			    <a class="main-logo" href="index.html">
                     <img src="img/logo.png" alt="Веб-студия Nёrds" height="56" width="140">
                 </a>
 				
                 <nav class="main-navigation">
                     <ul>
                         <li>
-                        <a  href="index.html">Студия</a>
+                        <a class="active" href="index.html">Студия</a>
                         </li>
                         <li>
                         <a href="#">Клиенты</a>
                         </li>
                         <li>
-						<a class="active" href="catalog.html">Магазин</a>
+						<a href="catalog.html">Магазин</a>
                         </li>
                         <li>
                         <a href="#">Контакты</a>
@@ -226,39 +224,34 @@
 				</main>	
 		   <div class="map" id="googleMap"> 
             </div>
+			<section class="contacts">
+				<h2 class="visually-hidden">Наши контакты</h2>
+			   
+				<div class="container address-wrapper">
+				  <div class="our-address">
+					<h3 class="our-address-header">nёrds design studio</h3>
+					<p class="address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<p class="phone">тел. +7 (812) 275-75-75</p>
+					<a class="btn" href="https://echo.htmlacademy.ru">Напишите нам</a>
+				  </div>
+				  
+			   </div>	
+	         </section>
     <footer class="main-footer">
-        <div class="adress ">
-            <section class="contacts">
-                <h3 class="contacts-title">Nёrds design studio</h3>
-				
-                <p class="contacts-address">191186, Санкт-Петербург, ул. Б.
-                Конюшенная,д. 19/8</p>
-				 
-                <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-				<a class="btn" href="https://echo.htmlacademy.ru">Напишите нам</a>
-                           </section>
-			
-            <section class="footer-social">
-			<h2 class="visually-hidden">Ссылки на социальные сети</h2>
-                <a class="social-btn social-btn-vk" href="#" >
-				 <span class="visually-hidden">ВКонтакте</span>
-				</a> 
-                <a class="social-btn social-btn-fb" href="#" >
-				<span class="visually-hidden">Фейсбук</span>
-				</a> 
-				 
-                <a class="social-btn social-btn-insta" href="#">
-				<span class="visually-hidden">Инстаграм</span>
-				</a>
+                   <section class="footer-social">
+				<h2 class="visually-hidden">Ссылки на социальные сети</h2>
+                <a class="social-btn social-btn-vk" href="#" ><span class="visually-hidden">Логотип В контакте</span></a> 
+                <a class="social-btn social-btn-fb" href="#" ><span class="visually-hidden">Логотип Фейсбука</span></a> 
+                <a class="social-btn social-btn-insta" href="#" ><span class="visually-hidden">Логотип Инстаграмма</span></a>
             </section>
             <section class="footer-promo">
-			 <h2 class="visually-hidden">С нами дружить выгодно!</h2>	
+				<h2 class="visually-hidden">С нами дружить выгодно!</h2>	
                 <b>Давайте дружить, это выгодно!</b>
                 <p>Скидка 10% для друзей из социальных сетей.</p>
             </section>
-        </div>
+       
     </footer>
-       <div class="modal-content">
+     <div class="modal-content">
 			<button class="btn-close" type="button" title="Закрыть">Закрыть</button>
 			<form class="send-email" action="https://echo.htmlacademy.ru" method="post">
 				<label class="name">Ваше имя:<input type="text" name="name" placeholder="Имя Фамилия"></label>
@@ -268,6 +261,6 @@
 			</form>
 		</div>   
     <script src="js/popup.js"></script>
-   
+    <script src="js/popup.min.js"></script>
 </body>
 </html>
